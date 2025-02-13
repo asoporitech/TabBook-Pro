@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:tabactivityfragment/HomeFragment.dart';
+import 'package:tabactivityfragment/VideoFragment.dart';
+
+import 'FriendsFragment.dart';
+import 'MenuFragment.dart';
+import 'NotificationFragment.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,11 +46,11 @@ class HomeActivity extends StatelessWidget{
           ),
           body: TabBarView(
               children: [
-                Center(child: Text("Home")),
-                Center(child: Text("Friends")),
-                Center(child: Text("Videos")),
-                Center(child: Text("Notifications")),
-                Center(child: Text("Menu")),
+                Homefragment(),
+                Friendsfragment(),
+                Videofragment(),
+                NotificationFragment(),
+                Menufragment(),
               ]),
         )
     );
